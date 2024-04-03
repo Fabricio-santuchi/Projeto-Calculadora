@@ -1,0 +1,131 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+body .container__Calculadora {
+  height: 450px;
+  width: 350px;
+  padding: 30px;
+  display: grid;
+  grid-template-rows: 80px repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  grid-template-areas: "disp disp disp disp" "c ce dividido vezes" "sete oito nove menos" "quatro cinco seis mais" "um dois tres igual" "zero zero ponto igual";
+}
+body .container__Calculadora .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container__Calculadora .item:nth-of-type(1) {
+  grid-area: c;
+}
+body .container__Calculadora .item:nth-of-type(2) {
+  grid-area: ce;
+}
+body .container__Calculadora .item:nth-of-type(3) {
+  grid-area: dividido;
+}
+body .container__Calculadora .item:nth-of-type(4) {
+  grid-area: vezes;
+}
+body .container__Calculadora .item:nth-of-type(5) {
+  grid-area: sete;
+}
+body .container__Calculadora .item:nth-of-type(6) {
+  grid-area: oito;
+}
+body .container__Calculadora .item:nth-of-type(7) {
+  grid-area: nove;
+}
+body .container__Calculadora .item:nth-of-type(8) {
+  grid-area: menos;
+}
+body .container__Calculadora .item:nth-of-type(9) {
+  grid-area: quatro;
+}
+body .container__Calculadora .item:nth-of-type(10) {
+  grid-area: cinco;
+}
+body .container__Calculadora .item:nth-of-type(11) {
+  grid-area: seis;
+}
+body .container__Calculadora .item:nth-of-type(12) {
+  grid-area: mais;
+}
+body .container__Calculadora .item:nth-of-type(13) {
+  grid-area: um;
+}
+body .container__Calculadora .item:nth-of-type(14) {
+  grid-area: dois;
+}
+body .container__Calculadora .item:nth-of-type(15) {
+  grid-area: tres;
+}
+body .container__Calculadora .item:nth-of-type(16) {
+  grid-area: igual;
+}
+body .container__Calculadora .item:nth-of-type(17) {
+  grid-area: zero;
+}
+body .container__Calculadora .item:nth-of-type(18) {
+  grid-area: ponto;
+}
+body .container__Calculadora .display {
+  grid-area: disp;
+}
+
+:root {
+  --font-padrao: "Titillium Web", sans-serif;
+  --cor-de-fundo: linear-gradient(45deg, #7d7d7e, #C7C8CC);
+  --cor-da-calculadora: linear-gradient(180deg, #9f7d5c 5%, #82613f, #1c140d);
+}
+
+body {
+  background-image: url(../stack/img-fundo3.jpg);
+  background-position: center;
+  background-size: 120%;
+  font-family: var(--font-padrao);
+  font-size: 2rem;
+  font-weight: 600;
+}
+body .container__Calculadora {
+  background: #303030;
+  border-radius: 15px;
+  box-shadow: 3px 5px 8px rgb(0, 0, 0);
+}
+body .container__Calculadora .item {
+  border-radius: 10px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  box-shadow: 0px 4px 1px rgba(0, 0, 0, 0.396);
+}
+body .container__Calculadora .item-lg {
+  background-color: rgb(243, 235, 235);
+  color: black;
+}
+body .container__Calculadora .item-ng {
+  background-color: rgb(100, 100, 100);
+  color: white;
+}
+body .container__Calculadora .item:active {
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.396);
+  transform: translate(0px, 2px);
+  transition: 0.1s;
+}
+body .container__Calculadora .item:not(active) {
+  transition: 0.4s;
+}
+body .container__Calculadora .display {
+  background-color: white;
+  border: 2px solid;
+  border-radius: 10px;
+  border-color: black rgb(100, 100, 100) rgb(100, 100, 100) black;
+  padding: 15px;
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+}/*# sourceMappingURL=style.css.map */

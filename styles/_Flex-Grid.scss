@@ -1,0 +1,88 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    .container__Calculadora{
+        height: 450px;
+        width: 350px;
+        padding: 30px;
+        display: grid;
+        grid-template-rows: 80px repeat(5, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+
+        grid-template-areas: 
+        'disp disp disp disp'
+        'c ce dividido vezes'
+        'sete oito nove menos'
+        'quatro cinco seis mais'
+        'um dois tres igual'
+        'zero zero ponto igual';
+
+        .item{
+            display: flex;
+            justify-content: center;
+            align-items: center;        
+
+            &:nth-of-type(1){
+                grid-area: c;
+            }
+            &:nth-of-type(2){
+                grid-area: ce;
+            }
+            &:nth-of-type(3){
+                grid-area: dividido;
+            }
+            &:nth-of-type(4){
+                grid-area: vezes;
+            }
+            &:nth-of-type(5){
+                grid-area: sete;
+            }
+            &:nth-of-type(6){
+                grid-area: oito;
+            }
+            &:nth-of-type(7){
+                grid-area: nove;
+            }
+            &:nth-of-type(8){
+                grid-area: menos;
+            }
+            &:nth-of-type(9){
+                grid-area: quatro;
+            }
+            &:nth-of-type(10){
+                grid-area: cinco;
+            }
+            &:nth-of-type(11){
+                grid-area: seis;
+            }
+            &:nth-of-type(12){
+                grid-area: mais;
+            }
+            &:nth-of-type(13){
+                grid-area: um;
+            }
+            &:nth-of-type(14){
+                grid-area: dois;
+            }
+            &:nth-of-type(15){
+                grid-area: tres;
+            }
+            &:nth-of-type(16){
+                grid-area: igual;
+            }
+            &:nth-of-type(17){
+                grid-area: zero;
+            }
+            &:nth-of-type(18){
+                grid-area: ponto;
+            }
+        }
+        .display{
+            grid-area: disp;
+        }
+    }
+}
