@@ -80,7 +80,7 @@ body .container__Calculadora .display {
 
 :root {
   --font-padrao: "Titillium Web", sans-serif;
-  --cor-de-fundo: linear-gradient(45deg, #7d7d7e, #C7C8CC);
+  --cor-de-fundo: linear-gradient(45deg, #7d7d7e, #c7c8cc);
   --cor-da-calculadora: linear-gradient(180deg, #9f7d5c 5%, #82613f, #1c140d);
 }
 
@@ -128,4 +128,4 @@ body .container__Calculadora .display {
   display: flex;
   justify-content: right;
   align-items: flex-end;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
